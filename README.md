@@ -3,5 +3,5 @@ Todos os projetos da disciplina desenvolvimento web
 
 ## Estrutura de pastas
   ### dividida em:
-  - Pasta com nome da atividade
-  - Estrutura do projeto dentro de cada pasta
+    - Pasta com nome da atividade
+    - Estrutura do projeto dentro de cada pasta
