@@ -36,4 +36,14 @@ let matriz = [
     [7, 8, 9]
 ]
 
-console.log(matriz)
+function imprimirMatriz(A){
+    for(let i=0; i < A.length; i++){
+        let linha = ""
+        for(let j=0; j < A[i].length; j++){
+            linha += A[i][j] + "\t"
+        }
+        console.log(linha)
+    }
+}
+
+imprimirMatriz(matriz)
