@@ -63,3 +63,20 @@ console.log(capitais.DF + " - " + capitais.DDD_DF)
 for(chave in capitais){
     console.log(chave + " = " + capitais[chave])
 }
+
+function verificarParidade(n){
+    if (n % 2 == 0){
+        return true
+    } else {
+        return false
+    }
+}
+
+let n = 2
+console.log(`verificarParidade(${n}) = ${verificarParidade(n)}`)
+n = 3
+console.log(`verificarParidade(${n}) = ${verificarParidade(n)}`)
+n = 7
+console.log(`verificarParidade(${n}) = ${verificarParidade(n)}`)
+n = 10
+console.log(`verificarParidade(${n}) = ${verificarParidade(n)}`)
