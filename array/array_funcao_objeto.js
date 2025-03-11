@@ -29,3 +29,11 @@ imprimirResultado(num_A, num_B, operacoes[3], result)
 
 result = num_A % num_B
 imprimirResultado(num_A, num_B, operacoes[4], result)
+
+let matriz = [
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+]
+
+console.log(matriz)
