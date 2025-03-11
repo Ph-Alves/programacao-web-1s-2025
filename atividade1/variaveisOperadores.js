@@ -3,20 +3,20 @@ let num_B = 4
 
 let result = num_A + num_B
 let operacao = 'soma'
-console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${resultado}`)
+console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${result}`)
 
-resultado = num_A - num_B
+result = num_A - num_B
 operacao = 'subtração'
-console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${resultado}`)
+console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${result}`)
 
 result = num_A * num_B
 operacao = 'multiplicação'
-console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${resultado}`)
+console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${result}`)
 
 result = num_A / num_B
 operacao = 'divisão'
-console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${resultado}`)
+console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${result}`)
 
 result = num_A % num_B
 operacao = 'divisão de resto'
-console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${resultado}`)
+console.log(`Resultado da ${operacao} entre ${num_A} e ${num_B} é ${result}`)
