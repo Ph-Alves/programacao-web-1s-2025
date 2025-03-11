@@ -47,3 +47,19 @@ function imprimirMatriz(A){
 }
 
 imprimirMatriz(matriz)
+
+
+let capitais = {
+    DF: "Brasília",
+    DDD_DF: 61,
+    SP: "São Paulo",
+    DDD_SP: 11,
+    RJ: "Rio de Janeiro",
+    DDD_RJ: 21,
+}
+
+console.log(capitais.DF + " - " + capitais.DDD_DF)
+
+for(chave in capitais){
+    console.log(chave + " = " + capitais[chave])
+}
