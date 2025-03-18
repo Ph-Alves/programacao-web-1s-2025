@@ -1,29 +1,24 @@
 function verificarNumeroPrimo(n){
-    let i = n
-    let result
-    for (i; i > 1; i--){
-        if (i != n && i != 0){
-            if (n % i == 0){
-                result = false
-            }
-        } else {
-            result = true
+    if (n < 2){
+        return false
+    } else if (n == 2){
+        return true
+    }
+    for (i = 3; i < n; i += 2){
+        if (n % i == 0){
+            return false
         }
     }
-    if (n == 0 || n == 1){
-        result = false
-        return console.log(result)
-    }
-    return console.log(result)
+    return true
 }
 
-verificarNumeroPrimo(0); //false
-verificarNumeroPrimo(1); //false
-verificarNumeroPrimo(2); //true
-verificarNumeroPrimo(3); //true
-verificarNumeroPrimo(7); //true
-verificarNumeroPrimo(83); //true
-verificarNumeroPrimo(100); //false
-verificarNumeroPrimo(991); //true
-verificarNumeroPrimo(104729); //true
-verificarNumeroPrimo(14348907); //false
+console.log(verificarNumeroPrimo(0)) //false
+console.log(verificarNumeroPrimo(1)) //false
+console.log(verificarNumeroPrimo(2)) //true
+console.log(verificarNumeroPrimo(3)) //true
+console.log(verificarNumeroPrimo(7)) //true
+console.log(verificarNumeroPrimo(83)) //true
+console.log(verificarNumeroPrimo(100)) //false
+console.log(verificarNumeroPrimo(991)) //true
+console.log(verificarNumeroPrimo(104729)) //true
+console.log(verificarNumeroPrimo(14348907)) //false

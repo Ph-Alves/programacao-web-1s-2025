@@ -9,7 +9,7 @@ function matrizTransposta(A) {
     }
 
     console.log("Matriz transposta: ")
-    for (let i=0; i < A.length - 1; i++){
+    for (let i=0; i < A[0].length; i++){
         let transposta = ""
         for (let j=0; j < A.length; j++){
             transposta += matriz[j][i] + "\t"
