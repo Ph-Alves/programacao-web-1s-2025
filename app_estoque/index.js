@@ -1,5 +1,5 @@
 const express = require('express');
-const estoque = require('./estoque');
+const estoque = require('./util/estoque');
 const app     = express();
 
 app.get('/', (req, res)=>{
