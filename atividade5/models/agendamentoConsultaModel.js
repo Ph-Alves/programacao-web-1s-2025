@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize')
-const db = require('../db')
+const Sequelize = require('sequelize');
+const db = require('../db');
 
 const AgendamentoConsulta = db.define('agendamento_consulta', {
     id: {
@@ -21,7 +21,7 @@ const AgendamentoConsulta = db.define('agendamento_consulta', {
         allowNull: false
     },
     data_nascimento: {
-        type: Sequelize.STRING,
+        type: Sequelize.DATE,
         allowNull: false
     },
     telefone: {
@@ -48,11 +48,13 @@ const AgendamentoConsulta = db.define('agendamento_consulta', {
         type: Sequelize.DATE,
         allowNull: false
     },
-    hora_consulta: {},
-    observacao: {
+    hora_consulta: {
         type: Sequelize.STRING,
         allowNull: false
+    },
+    observacao: {
+        type: Sequelize.STRING
     }
-})
+});
 
-module.exports = AgendamentoConsulta
+module.exports = AgendamentoConsulta;

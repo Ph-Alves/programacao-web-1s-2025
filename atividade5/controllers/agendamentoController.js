@@ -1,11 +1,13 @@
-const AgendamentoConsulta = require('../models/agendamentoConsultaModel')
+const AgendamentoConsulta = require('../models/agendamentoConsultaModel');
 
 function getIndexView(req, res){
     res.render('index.html');
 }
 
 function getAgendamentosView(req, res){
-    res.render('agendamentos.html');
+    AgendamentoConsulta.findAll().then((agendamentos)=>{
+        res.render('agendamentos.html', {agendamentos});
+    });
 }
 
 function postAgendarConsulta(req, res){
@@ -13,11 +15,12 @@ function postAgendarConsulta(req, res){
     let campos_invalidos = validarRequisicaoAgendamentoConsulta(dados_consulta);
 
     if(campos_invalidos.length == 0){
-        AgendamentoConsulta.create(dados_consulta).then(() => {
-            res.redirect('/agendamentos')
-        })
-    } else {
-        res.render('index.html', {campos_invalidos, dados_consulta});   
+        AgendamentoConsulta.create(dados_consulta).then(()=>{
+            res.redirect('/agendamentos');
+        });
+    }
+    else{
+        res.render('index.html', {campos_invalidos, dados_consulta});
     }
 }
 
